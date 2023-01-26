@@ -29,7 +29,7 @@ fn main() {
                 let mut consonent = true;
                 for vwl in &vowels {
                     //println!("{vwl}");
-                    if *vwl == first_char {
+                    if *vwl == first_char.to_ascii_lowercase() {
                         consonent = false;
                         //println!("{first_char} is a vowel!!");
                     }
