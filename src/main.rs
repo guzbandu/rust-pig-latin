@@ -25,11 +25,13 @@ fn main() {
                 }
                 let char_array: Vec<char> = word.chars().collect();
                 let first_char = char_array[0];
+                let lower_first_char_array: Vec<char> = first_char.to_lowercase().collect();
+                let lower_first_char = lower_first_char_array[0];
                 //println!("{word} {first_char}");
                 let mut consonent = true;
                 for vwl in &vowels {
                     //println!("{vwl}");
-                    if *vwl == first_char.to_ascii_lowercase() {
+                    if *vwl == lower_first_char {
                         consonent = false;
                         //println!("{first_char} is a vowel!!");
                     }
